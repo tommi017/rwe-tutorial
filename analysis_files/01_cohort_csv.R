@@ -7,8 +7,8 @@
   # This is a copy of 01_cohort.R that runs on the CSV files instead of Aiven. The SQL is the same, but it uses
   # only syntax that works in both PostgreSQL and DuckDB, so the final version can be moved back to Aiven.
   schema <- "rwe"
-  data_dir <- Sys.getenv("RWE_DATA_DIR", unset = c("raw_data", "../raw_data", "rwe_tutorial/raw_data")[
-    dir.exists(c("raw_data", "../raw_data", "rwe_tutorial/raw_data"))][1])
+  data_dir <- Sys.getenv("RWE_DATA_DIR", unset = c("raw_data", "../raw_data")[
+    dir.exists(c("raw_data", "../raw_data"))][1])
 
   # Define the connection to a temporary DuckDB database in memory.
   con <- dbConnect(duckdb())

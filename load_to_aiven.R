@@ -35,7 +35,7 @@ script_path <- function() {
   )
 }
 
-# The downloaded rwe_tutorial folder is self-contained. All paths below are
+# The downloaded repository folder is self-contained. All paths below are
 # resolved relative to the folder containing this script, not the user's
 # current working directory.
 project_root <- dirname(normalizePath(script_path(), mustWork = TRUE))
