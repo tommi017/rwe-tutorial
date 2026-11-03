@@ -1,0 +1,11 @@
+raw_data/*.csv
+raw_data/*.zip
+output/*
+!output/.gitkeep
+*.Rproj
+.Rhistory
+.RData
+.Renviron
+*.pem
+.vscode/
+/raw_data.zip
