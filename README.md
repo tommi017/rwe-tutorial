@@ -37,13 +37,13 @@ be interpreted clinically.
 
 ```text
 rwe-tutorial/
-â”śâ”€â”€ load_to_aiven.R   # loads the CSV files into the Aiven PostgreSQL database
-â”śâ”€â”€ raw_data/         # CSV files (download from the Releases page, see below)
-â”śâ”€â”€ instruction/      # setup and loading instructions
-â”śâ”€â”€ analysis_files/   # analysis scripts
-â”‚   â”śâ”€â”€ 01_cohort.R       # cohort and outcome on Aiven (SQL via ODBC)
-â”‚   â””â”€â”€ 01_cohort_csv.R   # the same analysis on the CSV files (DuckDB)
-â””â”€â”€ output/           # reference and user-generated outputs
+|-- load_to_aiven.R   # loads the CSV files into the Aiven PostgreSQL database
+|-- raw_data/         # CSV files (download from the Releases page, see below)
+|-- instruction/      # setup and loading instructions
+|-- analysis_files/   # analysis scripts
+|   |-- 01_cohort.R       # cohort and outcome on Aiven (SQL via ODBC)
+|   `-- 01_cohort_csv.R   # the same analysis on the CSV files (DuckDB)
+`-- output/           # reference and user-generated outputs
 ```
 
 ## Getting started
