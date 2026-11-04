@@ -22,8 +22,8 @@ exposure, derive patient demographic and clinical characteristics, define an
 outcome variable, and reproduce publication outputs. The worked example is
 inspired by *Incidence, risk factors, and outcomes of respiratory related
 hospitalizations in older patients with COPD, asthma, and bronchiectasis*
-([PMC12216934](https://pmc.ncbi.nlm.nih.gov/articles/PMC12216934/)). It is a
-teaching reconstruction, not a replication of the study's results.
+([PMC12216934](https://pmc.ncbi.nlm.nih.gov/articles/PMC12216934/)). It is a simplified teaching reconstruction of selected parts of the study's
+results, not a replication of the study.
 
 **The working environment.** Analyses are written in SQL and run from R, the way
 real-world data are typically stored and queried in industry: in a relational
