@@ -87,10 +87,9 @@ To work without a database, run `analysis_files/01_cohort_csv.R`. It needs the
 - The synthetic patient records were generated with
   [Synthea](https://github.com/synthetichealth/synthea) (Apache License 2.0)
   and then curated and adjusted for teaching purposes.
-- `icd10cm_dictionary.csv` is based on ICD-10-CM published by the
-  U.S. National Center for Health Statistics / CDC.
-- `atc_dictionary.csv` and the `atc_code*` columns use the WHO ATC
-  classification and RxNorm, obtained through OHDSI Athena. These remain
-  subject to the terms of their owners ([WHO Collaborating Centre for Drug
-  Statistics Methodology](https://atcddd.fhi.no/), [NLM RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/)),
-  and the licenses above do not apply to them.
+- `icd10cm_dictionary.csv` and `atc_dictionary.csv`, as well as the `atc_code*`
+  columns, are based on the ICD-10-CM, WHO ATC and RxNorm vocabularies obtained
+  through [OHDSI Athena](https://athena.ohdsi.org/). These remain subject to the
+  terms of their owners (e.g. [WHO Collaborating Centre for Drug Statistics
+  Methodology](https://atcddd.fhi.no/), [NLM RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/),
+  CDC/NCHS for ICD-10-CM), and the licenses above do not apply to them.
