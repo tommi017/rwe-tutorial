@@ -6,7 +6,10 @@ synthetic electronic health record data.
 **Who is it for?** Anyone interested in RWE analysis: programmers and data
 analysts who want to explore this field, biostatisticians who want to strengthen
 their programming skills, and epidemiologists who want to understand the data and
-programming aspects and nuances of observational database studies.
+programming aspects and nuances of observational database studies. It is also a good starting point for students
+and graduates of life-science and related fields who want to break into clinical
+data science or the wider health data analytics industry, or who are simply
+looking for inspiration and a direction to grow in.
 
 **The data.** The records come from [Synthea](https://github.com/synthetichealth/synthea)
 and were then modified for teaching purposes so that the dataset supports
