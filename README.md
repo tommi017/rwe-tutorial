@@ -1,13 +1,34 @@
 # RWE tutorial
 
-A hands-on tutorial on real-world evidence (RWE) analysis in R using a
-synthetic electronic health record dataset in PostgreSQL (Aiven). The worked
-example is inspired by the study *Incidence, risk factors, and outcomes of
-respiratory related hospitalizations in older patients with COPD, asthma, and
-bronchiectasis* ([PMC12216934](https://pmc.ncbi.nlm.nih.gov/articles/PMC12216934/)):
-build a cohort of patients aged 60+ with COPD, asthma or bronchiectasis, apply
-inclusion criteria with a one-year baseline and one-year follow-up, define the
-hospitalization outcome, and reproduce part of the article's Table 1.
+A hands-on tutorial on real-world evidence (RWE) analysis in R and SQL, built on
+synthetic electronic health record data.
+
+**The data.** The records come from [Synthea](https://github.com/synthetichealth/synthea)
+and were then modified for teaching purposes (ages, hospitalizations, coverage,
+comorbidities and drug use were adjusted) so that the dataset supports
+reproducing the analysis of a published study.
+
+**The analysis.** The worked example is inspired by *Incidence, risk factors, and
+outcomes of respiratory related hospitalizations in older patients with COPD,
+asthma, and bronchiectasis*
+([PMC12216934](https://pmc.ncbi.nlm.nih.gov/articles/PMC12216934/)): build a
+cohort of patients aged 60+ with COPD, asthma or bronchiectasis, apply inclusion
+criteria (one-year baseline, one-year follow-up, continuous coverage, at least
+one follow-up encounter), define the hospitalization outcome from diagnosis codes
+and drug use, and reproduce part of the article's Table 1. It is a teaching
+reconstruction, not a replication of the study's results.
+
+**The working environment.** Analyses are written in SQL and run from R, the way
+real-world data are typically stored and queried in industry: in a relational
+database rather than in flat files in memory. You can use either:
+
+- a **self-hosted PostgreSQL database on Aiven** (free plan), loaded with the
+  provided script, or
+- a **local DuckDB** database that reads the CSV files directly, with no account
+  or setup.
+
+Both paths use the same data and the same cohort logic, so you can start locally
+and move to a server database later.
 
 All data are **synthetic**. No real patient is represented, and results must not
 be interpreted clinically.
