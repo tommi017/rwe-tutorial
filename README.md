@@ -16,13 +16,13 @@ be interpreted clinically.
 
 ```text
 rwe-tutorial/
-├── load_to_aiven.R   # loads the CSV files into the Aiven PostgreSQL database
-├── raw_data/         # CSV files (download from the Releases page, see below)
-├── instruction/      # setup and loading instructions
-├── analysis_files/   # analysis scripts
-│   ├── 01_cohort.R       # cohort and outcome on Aiven (SQL via ODBC)
-│   └── 01_cohort_csv.R   # the same analysis on the CSV files (DuckDB)
-└── output/           # reference and user-generated outputs
+â”śâ”€â”€ load_to_aiven.R   # loads the CSV files into the Aiven PostgreSQL database
+â”śâ”€â”€ raw_data/         # CSV files (download from the Releases page, see below)
+â”śâ”€â”€ instruction/      # setup and loading instructions
+â”śâ”€â”€ analysis_files/   # analysis scripts
+â”‚   â”śâ”€â”€ 01_cohort.R       # cohort and outcome on Aiven (SQL via ODBC)
+â”‚   â””â”€â”€ 01_cohort_csv.R   # the same analysis on the CSV files (DuckDB)
+â””â”€â”€ output/           # reference and user-generated outputs
 ```
 
 ## Getting started
@@ -42,15 +42,20 @@ To work without a database, run `analysis_files/01_cohort_csv.R`. It needs the
 
 ## License and attribution
 
-- Code (R scripts, SQL) is licensed under the [MIT License](LICENSE).
+- Code (R scripts, SQL) is licensed under the
+  [PolyForm Noncommercial License 1.0.0](LICENSE).
 - Documentation and the synthetic data are licensed under
-  [Creative Commons Attribution 4.0 International](LICENSE-CC-BY-4.0.txt).
-- You may copy, adapt and redistribute this material, including commercially,
-  provided that you keep the copyright notice and give appropriate credit, for
-  example:
+  [Creative Commons Attribution-NonCommercial 4.0 International](LICENSE-CC-BY-NC-4.0.txt).
+- You may copy, adapt and redistribute this material for **noncommercial**
+  purposes (e.g. personal learning, teaching, research), provided that you keep
+  the copyright notice and give appropriate credit, for example:
 
-  > Based on "RWE tutorial" by Tomasz Mikołajczyk,
-  > https://github.com/tommi017/rwe-tutorial, licensed under MIT / CC BY 4.0.
+  > Based on "RWE tutorial" by Tomasz MikoĹ‚ajczyk,
+  > https://github.com/tommi017/rwe-tutorial, licensed under PolyForm
+  > Noncommercial 1.0.0 / CC BY-NC 4.0.
+- Commercial use requires a separate license. Please contact me via
+  [GitHub](https://github.com/tommi017).
+- This is a source-available license, not an OSI-approved open source license.
 
 ### Third-party material
 
@@ -63,4 +68,4 @@ To work without a database, run `analysis_files/01_cohort_csv.R`. It needs the
   classification and RxNorm, obtained through OHDSI Athena. These remain
   subject to the terms of their owners ([WHO Collaborating Centre for Drug
   Statistics Methodology](https://atcddd.fhi.no/), [NLM RxNorm](https://www.nlm.nih.gov/research/umls/rxnorm/)),
-  and the CC BY 4.0 license above does not apply to them.
+  and the licenses above do not apply to them.
