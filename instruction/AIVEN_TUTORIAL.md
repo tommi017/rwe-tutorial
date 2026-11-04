@@ -32,12 +32,12 @@ identifiable data without an appropriate security review.
 
 ## 1. Download the teaching data and scripts
 
-1. Clone or download this repository (`Code` > `Download ZIP`).
-2. Download `raw_data.zip` from the
+1. Download `rwe-tutorial-v1.0.zip` from the
    [Releases page](https://github.com/tommi017/rwe-tutorial/releases/latest)
-   and unzip it into the `raw_data/` folder of the repository. The CSV files
-   are not stored in the repository itself because some of them are larger than
-   GitHub's 100 MB file limit.
+   and unzip it. It contains the scripts and the CSV files in `raw_data/`.
+2. (Only if you used `git clone` instead) unzip the data into the `raw_data/`
+   folder. The CSV files are not stored in git because some of them are larger
+   than GitHub's 100 MB file limit.
 
 The loader only needs the CSV files to be present in the `raw_data/` folder
 next to `load_to_aiven.R`.

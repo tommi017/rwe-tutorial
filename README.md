@@ -27,9 +27,12 @@ rwe-tutorial/
 
 ## Getting started
 
-1. Download `raw_data.zip` from the
+1. Download `rwe-tutorial-v1.0.zip` from the
    [Releases page](https://github.com/tommi017/rwe-tutorial/releases/latest)
-   and unzip it into `raw_data/`.
+   and unzip it. It contains the whole project, including the CSV files in
+   `raw_data/`, so it is ready to use. (If you prefer `git clone`, also unzip
+   the data into `raw_data/` - the CSVs are not in git because some exceed
+   GitHub's 100 MB file limit.)
 2. Follow [instruction/AIVEN_TUTORIAL.md](instruction/AIVEN_TUTORIAL.md) to
    create a free Aiven database and load the data.
 3. Open `analysis_files/01_cohort.R` in RStudio and run it step by step.

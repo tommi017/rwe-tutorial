@@ -9,3 +9,4 @@ output/*
 *.pem
 .vscode/
 /raw_data.zip
+/rwe-tutorial-*.zip
