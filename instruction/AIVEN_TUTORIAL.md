@@ -61,14 +61,14 @@ The repository has this layout:
 
 ```text
 rwe-tutorial/
-├── load_to_aiven.R
-├── raw_data/
-│   ├── patients.csv
-│   ├── encounters.csv
-│   └── ...
-├── instruction/
-├── analysis_files/
-└── output/
+|-- load_to_aiven.R
+|-- raw_data/
+|   |-- patients.csv
+|   |-- encounters.csv
+|   `-- ...
+|-- instruction/
+|-- analysis_files/
+`-- output/
 ```
 
 The loader finds its own location and uses the sibling `raw_data/` folder.

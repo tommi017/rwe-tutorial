@@ -71,7 +71,7 @@ To work without a database, run `analysis_files/01_cohort_csv.R`. It needs the
   purposes (e.g. personal learning, teaching, research), provided that you keep
   the copyright notice and give appropriate credit, for example:
 
-  > Based on "RWE tutorial" by Tomasz MikoĹ‚ajczyk,
+  > Based on "RWE tutorial" by Tomasz Mikołajczyk,
   > https://github.com/tommi017/rwe-tutorial, licensed under PolyForm
   > Noncommercial 1.0.0 / CC BY-NC 4.0.
 - Commercial use requires a separate license. Please contact me via
