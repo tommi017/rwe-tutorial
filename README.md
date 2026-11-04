@@ -3,20 +3,24 @@
 A hands-on tutorial on real-world evidence (RWE) analysis in R and SQL, built on
 synthetic electronic health record data.
 
+**Who is it for?** Anyone interested in RWE analysis: programmers and data
+analysts who want to explore this field, biostatisticians who want to strengthen
+their programming skills, and epidemiologists who want to understand the data and
+programming aspects and nuances of observational database studies.
+
 **The data.** The records come from [Synthea](https://github.com/synthetichealth/synthea)
-and were then modified for teaching purposes (ages, hospitalizations, coverage,
-comorbidities and drug use were adjusted) so that the dataset supports
+and were then modified for teaching purposes so that the dataset supports
 reproducing the analysis of a published study.
 
-**The analysis.** The worked example is inspired by *Incidence, risk factors, and
-outcomes of respiratory related hospitalizations in older patients with COPD,
-asthma, and bronchiectasis*
-([PMC12216934](https://pmc.ncbi.nlm.nih.gov/articles/PMC12216934/)): build a
-cohort of patients aged 60+ with COPD, asthma or bronchiectasis, apply inclusion
-criteria (one-year baseline, one-year follow-up, continuous coverage, at least
-one follow-up encounter), define the hospitalization outcome from diagnosis codes
-and drug use, and reproduce part of the article's Table 1. It is a teaching
-reconstruction, not a replication of the study's results.
+**The analysis.** The tutorial follows a typical industry workflow for RWE
+database studies, from raw data to publication-ready tables, listings and figures
+(TLFs): build a cohort, apply inclusion and exclusion criteria, identify
+exposure, derive patient demographic and clinical characteristics, define an
+outcome variable, and reproduce publication outputs. The worked example is
+inspired by *Incidence, risk factors, and outcomes of respiratory related
+hospitalizations in older patients with COPD, asthma, and bronchiectasis*
+([PMC12216934](https://pmc.ncbi.nlm.nih.gov/articles/PMC12216934/)). It is a
+teaching reconstruction, not a replication of the study's results.
 
 **The working environment.** Analyses are written in SQL and run from R, the way
 real-world data are typically stored and queried in industry: in a relational
@@ -83,8 +87,8 @@ To work without a database, run `analysis_files/01_cohort_csv.R`. It needs the
 - The synthetic patient records were generated with
   [Synthea](https://github.com/synthetichealth/synthea) (Apache License 2.0)
   and then curated and adjusted for teaching purposes.
-- `icd10cm_dictionary.csv` is based on ICD-10-CM and SNOMED CT to ICD-10-CM
-  mappings published by the U.S. National Library of Medicine / CDC.
+- `icd10cm_dictionary.csv` is based on ICD-10-CM published by the
+  U.S. National Center for Health Statistics / CDC.
 - `atc_dictionary.csv` and the `atc_code*` columns use the WHO ATC
   classification and RxNorm, obtained through OHDSI Athena. These remain
   subject to the terms of their owners ([WHO Collaborating Centre for Drug
